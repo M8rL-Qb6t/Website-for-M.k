@@ -1,0 +1,1742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To You, From My Heart ❤️</title>
+    <meta name="description" content="A heartfelt message with love and memories">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #2563eb;
+            --secondary-blue: #3b82f6;
+            --light-blue: #60a5fa;
+            --soft-blue: #dbeafe;
+            --dark-blue: #1e40af;
+            --white: #ffffff;
+            --off-white: #f8fafc;
+            --gray-light: #f1f5f9;
+            --gray: #94a3b8;
+            --gray-dark: #475569;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --shadow: 0 10px 25px rgba(37, 99, 235, 0.1);
+            --shadow-lg: 0 20px 40px rgba(37, 99, 235, 0.15);
+            --radius: 16px;
+            --radius-sm: 10px;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, var(--off-white) 0%, var(--soft-blue) 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--gray-dark);
+            overflow-x: hidden;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background: var(--white);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+            animation: fadeInUp 0.8s ease-out;
+            border: 1px solid rgba(37, 99, 235, 0.1);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        /* Login Page */
+        .login-box {
+            padding: 60px 40px;
+            text-align: center;
+            background: linear-gradient(135deg, var(--white) 0%, var(--off-white) 100%);
+        }
+
+        .logo-container {
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            font-size: 48px;
+            color: var(--primary-blue);
+            animation: pulse 2s infinite;
+            margin-bottom: 15px;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .login-box h1 {
+            font-family: 'Playfair Display', serif;
+            color: var(--dark-blue);
+            margin-bottom: 15px;
+            font-size: 2.8rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--light-blue) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .tagline {
+            color: var(--gray);
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        .login-form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .input-group i {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--primary-blue);
+            font-size: 20px;
+            z-index: 2;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 18px 18px 18px 55px;
+            border: 2px solid var(--gray-light);
+            border-radius: var(--radius-sm);
+            font-size: 16px;
+            transition: var(--transition);
+            background: var(--white);
+            color: var(--gray-dark);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        .btn-primary {
+            width: 100%;
+            padding: 18px;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: var(--white);
+            border: none;
+            border-radius: var(--radius-sm);
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            margin-top: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: 0.5s;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(37, 99, 235, 0.2);
+        }
+
+        .btn-primary:hover::after {
+            left: 100%;
+        }
+
+        .hint {
+            margin-top: 20px;
+            color: var(--gray);
+            font-size: 0.9rem;
+            background: var(--soft-blue);
+            padding: 10px 15px;
+            border-radius: var(--radius-sm);
+            display: inline-block;
+        }
+
+        .admin-access {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid var(--gray-light);
+        }
+
+        .admin-link {
+            color: var(--gray);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .admin-link:hover {
+            color: var(--primary-blue);
+        }
+
+        /* Message Page */
+        .message-box {
+            padding: 40px;
+            background: var(--white);
+        }
+
+        .message-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            padding-bottom: 25px;
+            border-bottom: 2px solid var(--gray-light);
+        }
+
+        .message-header h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--dark-blue);
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+
+        .btn-icon {
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: var(--gray);
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 50%;
+            transition: var(--transition);
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-icon:hover {
+            background: var(--soft-blue);
+            color: var(--primary-blue);
+        }
+
+        .message-content {
+            position: relative;
+        }
+
+        .divider {
+            text-align: center;
+            margin: 40px 0;
+            color: var(--primary-blue);
+            font-size: 24px;
+            letter-spacing: 20px;
+            opacity: 0.5;
+        }
+
+        .message-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            color: var(--gray-dark);
+            text-align: justify;
+            padding: 0 10px;
+        }
+
+        .message-text:first-letter {
+            font-size: 3rem;
+            float: left;
+            line-height: 1;
+            margin-right: 10px;
+            color: var(--primary-blue);
+            font-family: 'Playfair Display', serif;
+            margin-top: 5px;
+        }
+
+        .signature {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            text-align: right;
+            color: var(--dark-blue);
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid var(--gray-light);
+            line-height: 1.4;
+        }
+
+        .continue-section {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .btn-secondary {
+            padding: 16px 45px;
+            background: var(--white);
+            color: var(--primary-blue);
+            border: 2px solid var(--primary-blue);
+            border-radius: var(--radius-sm);
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-blue);
+            color: var(--white);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.2);
+        }
+
+        /* Question Page */
+        .question-box {
+            padding: 40px;
+        }
+
+        .question-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .question-header h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--dark-blue);
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+        }
+
+        .photo-upload-area {
+            background: var(--soft-blue);
+            border-radius: var(--radius);
+            padding: 40px 30px;
+            text-align: center;
+            margin-bottom: 40px;
+            border: 3px dashed var(--light-blue);
+            transition: var(--transition);
+        }
+
+        .photo-upload-area:hover {
+            border-color: var(--primary-blue);
+            background: var(--white);
+        }
+
+        #image-preview {
+            width: 220px;
+            height: 220px;
+            margin: 0 auto 25px;
+            border-radius: 50%;
+            background: var(--white);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: var(--gray);
+            font-size: 14px;
+            overflow: hidden;
+            border: 4px solid var(--white);
+            box-shadow: var(--shadow);
+        }
+
+        #image-preview i {
+            font-size: 60px;
+            margin-bottom: 15px;
+            color: var(--light-blue);
+        }
+
+        #image-preview img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .upload-label {
+            display: inline-block;
+            padding: 14px 30px;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: var(--white);
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .upload-label:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.2);
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        .question-content {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .question-content h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: var(--dark-blue);
+            margin-bottom: 15px;
+        }
+
+        .question-subtitle {
+            color: var(--gray);
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+        }
+
+        .answer-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .btn-yes, .btn-no {
+            padding: 20px 50px;
+            border: none;
+            border-radius: var(--radius-sm);
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            min-width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn-yes {
+            background: linear-gradient(135deg, var(--success) 0%, #34d399 100%);
+            color: var(--white);
+        }
+
+        .btn-no {
+            background: linear-gradient(135deg, var(--danger) 0%, #f87171 100%);
+            color: var(--white);
+        }
+
+        .btn-yes:hover, .btn-no:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .navigation {
+            text-align: center;
+        }
+
+        .btn-back {
+            padding: 12px 30px;
+            background: var(--gray-light);
+            color: var(--gray-dark);
+            border: none;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 16px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-back:hover {
+            background: var(--gray);
+            color: var(--white);
+        }
+
+        /* Yes/No Result Pages */
+        .result-box {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .result-header {
+            margin-bottom: 40px;
+        }
+
+        .result-header h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--dark-blue);
+            font-size: 2.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .heart-animation-large {
+            font-size: 100px;
+            color: var(--primary-blue);
+            animation: heartbeat 1.5s infinite;
+            margin: 40px 0;
+        }
+
+        .cloud-animation {
+            font-size: 100px;
+            color: var(--gray);
+            animation: float 3s ease-in-out infinite;
+            margin: 40px 0;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+
+        .result-message {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: var(--gray-dark);
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .final-question {
+            background: linear-gradient(135deg, var(--soft-blue) 0%, var(--white) 100%);
+            border-radius: var(--radius);
+            padding: 40px;
+            margin: 40px auto;
+            border-left: 5px solid var(--primary-blue);
+            max-width: 600px;
+        }
+
+        .final-question h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--dark-blue);
+            margin-bottom: 15px;
+        }
+
+        .final-question p {
+            color: var(--gray);
+            font-size: 1.1rem;
+        }
+
+        .memory-upload {
+            margin: 40px 0;
+        }
+
+        #final-image-preview {
+            width: 250px;
+            height: 250px;
+            margin: 0 auto 25px;
+            border-radius: var(--radius);
+            background: var(--white);
+            border: 3px solid var(--primary-blue);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: var(--gray);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        #final-image-preview i {
+            font-size: 70px;
+            margin-bottom: 15px;
+            color: var(--primary-blue);
+        }
+
+        #final-image-preview img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .upload-btn-large {
+            display: inline-block;
+            padding: 16px 40px;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: var(--white);
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .upload-btn-large:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(37, 99, 235, 0.2);
+        }
+
+        .response-confirmation {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            color: #065f46;
+            padding: 25px;
+            border-radius: var(--radius);
+            margin: 40px auto;
+            max-width: 600px;
+            text-align: center;
+            border: 2px solid #10b981;
+        }
+
+        .response-confirmation i {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .response-confirmation p {
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+
+        .small-note {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .farewell-section {
+            background: linear-gradient(135deg, var(--off-white) 0%, var(--white) 100%);
+            border-radius: var(--radius);
+            padding: 30px;
+            margin: 40px auto;
+            max-width: 600px;
+            text-align: left;
+            border-left: 5px solid var(--warning);
+        }
+
+        .farewell-section p {
+            margin: 15px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .farewell-section i {
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: var(--warning);
+            font-size: 18px;
+        }
+
+        .navigation-final {
+            margin-top: 40px;
+        }
+
+        /* Admin Pages */
+        .admin-login-box {
+            padding: 60px 40px;
+            text-align: center;
+            background: linear-gradient(135deg, var(--off-white) 0%, var(--white) 100%);
+        }
+
+        .admin-login-box h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--dark-blue);
+            margin-bottom: 40px;
+            font-size: 2.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .admin-form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .admin-actions {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .btn-admin {
+            flex: 1;
+            padding: 16px;
+            background: linear-gradient(135deg, #7c3aed 0%, #8b5cf6 100%);
+            color: var(--white);
+            border: none;
+            border-radius: var(--radius-sm);
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn-admin:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(124, 58, 237, 0.2);
+        }
+
+        .admin-panel {
+            padding: 40px;
+            background: var(--white);
+        }
+
+        .admin-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            padding-bottom: 25px;
+            border-bottom: 2px solid var(--gray-light);
+        }
+
+        .admin-header h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--dark-blue);
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .btn-logout {
+            padding: 12px 25px;
+            background: linear-gradient(135deg, var(--danger) 0%, #f87171 100%);
+            color: var(--white);
+            border: none;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-logout:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(239, 68, 68, 0.2);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, var(--soft-blue) 0%, var(--white) 100%);
+            padding: 30px 25px;
+            border-radius: var(--radius);
+            text-align: center;
+            border: 2px solid var(--light-blue);
+            transition: var(--transition);
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .stat-card h3 {
+            color: var(--gray-dark);
+            font-size: 1rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .stat-card .number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+        }
+
+        .responses-section {
+            background: var(--off-white);
+            border-radius: var(--radius);
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+
+        .responses-section h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--dark-blue);
+            margin-bottom: 25px;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .responses-list {
+            max-height: 400px;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+
+        .response-item {
+            background: var(--white);
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: var(--radius-sm);
+            border-left: 5px solid var(--success);
+            transition: var(--transition);
+        }
+
+        .response-item.no-response {
+            border-left-color: var(--danger);
+        }
+
+        .response-item:hover {
+            transform: translateX(5px);
+            box-shadow: var(--shadow);
+        }
+
+        .response-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .response-answer {
+            font-weight: 600;
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .answer-yes {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            color: #065f46;
+        }
+
+        .answer-no {
+            background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+            color: #7f1d1d;
+        }
+
+        .response-time {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        .response-image {
+            color: var(--primary-blue);
+            font-size: 0.9rem;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .empty-state {
+            text-align: center;
+            color: var(--gray);
+            padding: 60px 20px;
+            font-style: italic;
+        }
+
+        .admin-controls {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-control {
+            padding: 15px 30px;
+            border: none;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 600;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            min-width: 180px;
+            justify-content: center;
+        }
+
+        .btn-danger {
+            background: linear-gradient(135deg, var(--danger) 0%, #f87171 100%);
+            color: var(--white);
+        }
+
+        .btn-success {
+            background: linear-gradient(135deg, var(--success) 0%, #34d399 100%);
+            color: var(--white);
+        }
+
+        .btn-control:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Floating Elements */
+        .floating-elements {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .floating-element {
+            position: absolute;
+            color: rgba(37, 99, 235, 0.1);
+            font-size: 24px;
+            animation: floatAround 20s linear infinite;
+        }
+
+        @keyframes floatAround {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translate(calc(100vw - 50px), calc(100vh - 50px)) rotate(720deg);
+                opacity: 0;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                border-radius: 12px;
+            }
+            
+            .login-box, .message-box, .question-box, .result-box, .admin-panel {
+                padding: 30px 20px;
+            }
+            
+            .answer-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+            
+            .btn-yes, .btn-no {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .admin-actions, .admin-controls {
+                flex-direction: column;
+            }
+            
+            .admin-controls .btn-control {
+                width: 100%;
+            }
+            
+            .login-box h1 {
+                font-size: 2.2rem;
+            }
+            
+            .message-header h2 {
+                font-size: 1.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                border-radius: 10px;
+            }
+            
+            .heart-animation-large, .cloud-animation {
+                font-size: 70px;
+            }
+            
+            #image-preview {
+                width: 180px;
+                height: 180px;
+            }
+            
+            #final-image-preview {
+                width: 200px;
+                height: 200px;
+            }
+            
+            .btn-yes, .btn-no {
+                padding: 18px 30px;
+                font-size: 18px;
+            }
+        }
+
+        /* Scrollbar Styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--gray-light);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary-blue);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--dark-blue);
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating Background Elements -->
+    <div class="floating-elements" id="floating-elements"></div>
+
+    <!-- Main Login Container -->
+    <div class="container" id="login-container">
+        <div class="login-box">
+            <div class="logo-container">
+                <div class="logo">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h1>To You, My Love</h1>
+                <p class="tagline">A message straight from my heart to yours</p>
+            </div>
+            
+            <div class="login-form">
+                <div class="input-group">
+                    <i class="fas fa-user-circle"></i>
+                    <input type="text" id="username" placeholder="Enter your beautiful name" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" placeholder="Our special number: 143" required>
+                </div>
+                <button id="login-btn" class="btn-primary">
+                    <i class="fas fa-envelope-open-text"></i> Read My Heart's Message
+                </button>
+                <p class="hint">
+                    <i class="fas fa-lightbulb"></i> Hint: The code is the number that means "I love you"
+                </p>
+            </div>
+            
+            <div class="admin-access">
+                <a href="#" id="admin-login-link" class="admin-link">
+                    <i class="fas fa-user-shield"></i> Admin Access
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message Container -->
+    <div class="container hidden" id="message-container">
+        <div class="message-box">
+            <div class="message-header">
+                <h2><i class="fas fa-heart"></i> From My Heart to Yours</h2>
+                <button class="btn-icon" id="close-message">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="message-content">
+                <div class="divider">✦ ✦ ✦</div>
+                
+                <p class="message-text">
+                    Hey… I don't know if you'll ever read this whole message, but I hope you do. I've been carrying these words inside me for a long time, and they've become heavier each day.
+                </p>
+                
+                <p class="message-text">
+                    I'm sorry… not just for the mistakes I made, but for the moments I failed to love you the way you deserved. You were the kind of person someone prays for — gentle, caring, patient. And somehow, I let the best parts of you slip through my fingers.
+                </p>
+                
+                <p class="message-text">
+                    Sometimes at night, when everything becomes quiet, I remember us — the way we talked, the way we laughed, the way we made each other feel safe for a little while. And it hurts in a soft, aching way… because I didn't protect what we had. I didn't protect your heart.
+                </p>
+                
+                <p class="message-text">
+                    If I could go back in time, I would hold you a little tighter, listen a little deeper, and love you with the kind of consistency you deserved. I would choose you in moments when I made you feel unsure. I would show you that you were my home, even when I was lost in my own storms.
+                </p>
+                
+                <p class="message-text">
+                    I'm not here to ask for another chance. I'm not here to drag you back into memories that might still sting. I just want you to know that you mattered — more than I ever admitted. Losing you didn't just hurt; it changed me. It carved a space in me that still feels empty sometimes.
+                </p>
+                
+                <p class="message-text">
+                    You were a beautiful chapter in my life — one I didn't realize was ending until the page turned. And even now, there are days when I wish I could read it again, just to feel close to you for a moment.
+                </p>
+                
+                <p class="message-text">
+                    I hope you find someone who sees the magic in you the way I should have. Someone who chooses you on your good days and your bad days. Someone who never lets you feel alone. Because you deserve that kind of love — the kind that stays, the kind that protects, the kind that grows.
+                </p>
+                
+                <p class="message-text">
+                    If our paths ever cross again, I hope it won't hurt. I hope it will feel like two hearts that once touched, smiling because the memory is still soft and warm.
+                </p>
+                
+                <div class="divider">✦ ✦ ✦</div>
+                
+                <p class="signature">
+                    Take care of yourself. Truly.<br>
+                    And… I'm sorry. For everything.<br>
+                    For what I did, and for what I couldn't give.
+                </p>
+                
+                <div class="continue-section">
+                    <button class="btn-secondary" id="continue-btn">
+                        Continue to My Question <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question Container -->
+    <div class="container hidden" id="question-container">
+        <div class="question-box">
+            <div class="question-header">
+                <h2><i class="fas fa-question-circle"></i> One Honest Question</h2>
+                <p class="question-subtitle">Please answer from your heart, not your mind</p>
+            </div>
+            
+            <div class="photo-upload-area">
+                <div id="image-preview">
+                    <i class="fas fa-user-circle"></i>
+                    <p>Your photo would shine here</p>
+                </div>
+                <input type="file" id="image-upload" accept="image/*" capture="environment">
+                <label for="image-upload" class="upload-label">
+                    <i class="fas fa-camera"></i> Add Your Beautiful Photo
+                </label>
+            </div>
+            
+            <div class="question-content">
+                <h3>Do you still have love for me in your heart?</h3>
+                <p class="question-subtitle">Be completely honest, whatever your answer may be</p>
+                
+                <div class="answer-buttons">
+                    <button class="btn-yes" id="yes-btn">
+                        <i class="fas fa-heart"></i> Yes, I Still Do
+                    </button>
+                    <button class="btn-no" id="no-btn">
+                        <i class="fas fa-heart-broken"></i> No, I Don't
+                    </button>
+                </div>
+            </div>
+            
+            <div class="navigation">
+                <button class="btn-back" id="back-to-message">
+                    <i class="fas fa-arrow-left"></i> Back to Message
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Yes Response Container -->
+    <div class="container hidden" id="yes-container">
+        <div class="result-box">
+            <div class="result-header">
+                <h2><i class="fas fa-heartbeat"></i> My Heart Soars</h2>
+            </div>
+            
+            <div class="heart-animation-large">
+                <i class="fas fa-heart"></i>
+            </div>
+            
+            <div class="result-message">
+                <p>Tears of joy fill my eyes reading your answer...</p>
+                <p>There's one last thing I need to ask you, from the deepest part of my soul:</p>
+            </div>
+            
+            <div class="final-question">
+                <h3>Can I be your protection once again?</h3>
+                <p>Can I be the one who guards your heart, who stands by you through everything?</p>
+            </div>
+            
+            <div class="memory-upload">
+                <div id="final-image-preview">
+                    <i class="fas fa-hearts"></i>
+                    <p>Upload a memory of us together</p>
+                </div>
+                <input type="file" id="final-image-upload" accept="image/*">
+                <label for="final-image-upload" class="upload-btn-large">
+                    <i class="fas fa-cloud-upload-alt"></i> Share Our Beautiful Memory
+                </label>
+            </div>
+            
+            <div class="response-confirmation">
+                <i class="fas fa-check-circle"></i>
+                <p><strong>Your response has been safely saved</strong></p>
+                <p class="small-note">This remains private between us</p>
+            </div>
+            
+            <div class="navigation-final">
+                <button class="btn-back" id="back-to-question-from-yes">
+                    <i class="fas fa-arrow-left"></i> Back to Question
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- No Response Container -->
+    <div class="container hidden" id="no-container">
+        <div class="result-box">
+            <div class="result-header">
+                <h2><i class="fas fa-cloud"></i> I Understand Completely</h2>
+            </div>
+            
+            <div class="cloud-animation">
+                <i class="fas fa-cloud-rain"></i>
+            </div>
+            
+            <div class="result-message">
+                <p>Okay, I knew I was wasting your time. I'm truly sorry.</p>
+                <p>Thank you for your honesty - it means more than you know.</p>
+                <p>I will always cherish what we shared, and I genuinely hope you find all the happiness you deserve.</p>
+            </div>
+            
+            <div class="farewell-section">
+                <p><i class="fas fa-star"></i> You were the most beautiful chapter of my life</p>
+                <p><i class="fas fa-star"></i> I'll forever remember the light in your eyes</p>
+                <p><i class="fas fa-star"></i> Take care of your precious heart always</p>
+            </div>
+            
+            <div class="response-confirmation">
+                <i class="fas fa-check-circle"></i>
+                <p><strong>Your honest response has been noted</strong></p>
+                <p class="small-note">Thank you for your courage</p>
+            </div>
+            
+            <div class="navigation-final">
+                <button class="btn-back" id="back-to-question-from-no">
+                    <i class="fas fa-arrow-left"></i> Back to Question
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Login Container -->
+    <div class="container hidden" id="admin-login-container">
+        <div class="admin-login-box">
+            <h2><i class="fas fa-user-shield"></i> Admin Portal</h2>
+            
+            <div class="admin-form">
+                <div class="input-group">
+                    <i class="fas fa-user-cog"></i>
+                    <input type="text" id="admin-username" placeholder="Admin Username">
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-key"></i>
+                    <input type="password" id="admin-password" placeholder="Admin Password">
+                </div>
+                
+                <div class="admin-actions">
+                    <button class="btn-admin" id="admin-login-btn">
+                        <i class="fas fa-sign-in-alt"></i> Access Admin Panel
+                    </button>
+                    <button class="btn-back" id="back-to-user-login">
+                        <i class="fas fa-arrow-left"></i> Back to Main
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Panel Container -->
+    <div class="container hidden" id="admin-panel-container">
+        <div class="admin-panel">
+            <div class="admin-header">
+                <h2><i class="fas fa-chart-pie"></i> Admin Dashboard</h2>
+                <button class="btn-logout" id="admin-logout">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3><i class="fas fa-users"></i> Total Responses</h3>
+                    <div class="number" id="total-responses">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3><i class="fas fa-heart"></i> Yes Responses</h3>
+                    <div class="number" id="yes-responses">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3><i class="fas fa-times"></i> No Responses</h3>
+                    <div class="number" id="no-responses">0</div>
+                </div>
+            </div>
+            
+            <div class="responses-section">
+                <h3><i class="fas fa-history"></i> Response History</h3>
+                <div class="responses-list" id="responses-list">
+                    <!-- Responses will appear here -->
+                    <div class="empty-state">
+                        <i class="fas fa-inbox" style="font-size: 40px; margin-bottom: 15px;"></i>
+                        <p>No responses yet</p>
+                        <p style="font-size: 0.9rem; margin-top: 10px;">Waiting for someone special to respond...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="admin-controls">
+                <button class="btn-control btn-danger" id="clear-data">
+                    <i class="fas fa-trash-alt"></i> Clear All Data
+                </button>
+                <button class="btn-control btn-success" id="export-data">
+                    <i class="fas fa-download"></i> Export Responses
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Database Management
+        class HeartDatabase {
+            constructor() {
+                this.initialize();
+            }
+            
+            initialize() {
+                if (!localStorage.getItem('heartResponses')) {
+                    localStorage.setItem('heartResponses', JSON.stringify([]));
+                }
+                
+                if (!localStorage.getItem('adminConfig')) {
+                    localStorage.setItem('adminConfig', JSON.stringify({
+                        username: 'admin',
+                        password: 'admin123',
+                        createdAt: new Date().toISOString()
+                    }));
+                }
+            }
+            
+            saveResponse(answer, images = {}) {
+                const responses = this.getAllResponses();
+                const newResponse = {
+                    id: Date.now(),
+                    answer: answer,
+                    images: images,
+                    timestamp: new Date().toLocaleString('en-US', {
+                        weekday: 'long',
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric',
+                        hour: '2-digit',
+                        minute: '2-digit',
+                        second: '2-digit'
+                    }),
+                    date: new Date().toISOString()
+                };
+                
+                responses.push(newResponse);
+                localStorage.setItem('heartResponses', JSON.stringify(responses));
+                
+                // Trigger stats update
+                this.updateAdminStats();
+                
+                return newResponse;
+            }
+            
+            getAllResponses() {
+                return JSON.parse(localStorage.getItem('heartResponses')) || [];
+            }
+            
+            clearAllResponses() {
+                localStorage.setItem('heartResponses', JSON.stringify([]));
+                this.updateAdminStats();
+            }
+            
+            getStats() {
+                const responses = this.getAllResponses();
+                return {
+                    total: responses.length,
+                    yes: responses.filter(r => r.answer === 'yes').length,
+                    no: responses.filter(r => r.answer === 'no').length
+                };
+            }
+            
+            updateAdminStats() {
+                const stats = this.getStats();
+                document.getElementById('total-responses').textContent = stats.total;
+                document.getElementById('yes-responses').textContent = stats.yes;
+                document.getElementById('no-responses').textContent = stats.no;
+                
+                this.displayResponses();
+            }
+            
+            displayResponses() {
+                const responses = this.getAllResponses();
+                const container = document.getElementById('responses-list');
+                
+                if (responses.length === 0) {
+                    container.innerHTML = `
+                        <div class="empty-state">
+                            <i class="fas fa-inbox" style="font-size: 40px; margin-bottom: 15px;"></i>
+                            <p>No responses yet</p>
+                            <p style="font-size: 0.9rem; margin-top: 10px;">Waiting for someone special to respond...</p>
+                        </div>
+                    `;
+                    return;
+                }
+                
+                // Sort by latest first
+                responses.sort((a, b) => new Date(b.date) - new Date(a.date));
+                
+                container.innerHTML = responses.map(response => {
+                    const answerClass = response.answer === 'yes' ? 'answer-yes' : 'answer-no';
+                    const answerText = response.answer === 'yes' ? 'YES' : 'NO';
+                    const hasImage = response.images.initial || response.images.final;
+                    
+                    return `
+                        <div class="response-item ${response.answer === 'no' ? 'no-response' : ''}">
+                            <div class="response-header">
+                                <span class="response-answer ${answerClass}">${answerText}</span>
+                                <span class="response-time">${response.timestamp}</span>
+                            </div>
+                            ${hasImage ? `
+                                <div class="response-image">
+                                    <i class="fas fa-image"></i>
+                                    ${response.images.initial ? 'Initial photo' : ''}
+                                    ${response.images.final ? ' + Memory photo' : ''}
+                                </div>
+                            ` : ''}
+                        </div>
+                    `;
+                }).join('');
+            }
+            
+            exportData() {
+                const responses = this.getAllResponses();
+                const dataStr = JSON.stringify(responses, null, 2);
+                const dataBlob = new Blob([dataStr], { type: 'application/json' });
+                const url = URL.createObjectURL(dataBlob);
+                
+                const a = document.createElement('a');
+                const date = new Date().toISOString().split('T')[0];
+                a.href = url;
+                a.download = `heart-responses-${date}.json`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            }
+            
+            validateAdmin(username, password) {
+                const config = JSON.parse(localStorage.getItem('adminConfig'));
+                return username === config.username && password === config.password;
+            }
+        }
+
+        // Image Handler
+        class ImageHandler {
+            static async toBase64(file) {
+                return new Promise((resolve, reject) => {
+                    const reader = new FileReader();
+                    reader.onload = () => resolve(reader.result);
+                    reader.onerror = reject;
+                    reader.readAsDataURL(file);
+                });
+            }
+            
+            static previewImage(file, previewElementId) {
+                return new Promise((resolve, reject) => {
+                    const reader = new FileReader();
+                    reader.onload = (e) => {
+                        const preview = document.getElementById(previewElementId);
+                        preview.innerHTML = `<img src="${e.target.result}" alt="Uploaded image">`;
+                        resolve(e.target.result);
+                    };
+                    reader.onerror = reject;
+                    reader.readAsDataURL(file);
+                });
+            }
+        }
+
+        // UI Controller
+        class UIController {
+            constructor() {
+                this.db = new HeartDatabase();
+                this.currentImages = {
+                    initial: null,
+                    final: null
+                };
+                this.init();
+            }
+            
+            init() {
+                this.createFloatingElements();
+                this.bindEvents();
+            }
+            
+            createFloatingElements() {
+                const container = document.getElementById('floating-elements');
+                const symbols = ['❤️', '💙', '✨', '🌟', '💫', '🌙', '☁️', '🌈'];
+                
+                for (let i = 0; i < 15; i++) {
+                    const element = document.createElement('div');
+                    element.className = 'floating-element';
+                    element.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+                    element.style.left = Math.random() * 100 + 'vw';
+                    element.style.top = Math.random() * 100 + 'vh';
+                    element.style.animationDelay = Math.random() * 20 + 's';
+                    element.style.fontSize = (Math.random() * 20 + 15) + 'px';
+                    element.style.opacity = Math.random() * 0.3 + 0.1;
+                    container.appendChild(element);
+                }
+            }
+            
+            bindEvents() {
+                // Main login
+                document.getElementById('login-btn').addEventListener('click', () => this.handleLogin());
+                document.getElementById('password').addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') this.handleLogin();
+                });
+                
+                // Admin login link
+                document.getElementById('admin-login-link').addEventListener('click', (e) => {
+                    e.preventDefault();
+                    this.showPage('admin-login-container');
+                });
+                
+                // Close message
+                document.getElementById('close-message').addEventListener('click', () => {
+                    this.showPage('login-container');
+                });
+                
+                // Continue to question
+                document.getElementById('continue-btn').addEventListener('click', () => {
+                    this.showPage('question-container');
+                });
+                
+                // Back navigation
+                document.getElementById('back-to-message').addEventListener('click', () => {
+                    this.showPage('message-container');
+                });
+                
+                // Image uploads
+                document.getElementById('image-upload').addEventListener('change', async (e) => {
+                    const file = e.target.files[0];
+                    if (file) {
+                        try {
+                            this.currentImages.initial = await ImageHandler.previewImage(file, 'image-preview');
+                        } catch (error) {
+                            console.error('Error processing image:', error);
+                        }
+                    }
+                });
+                
+                // Final image upload
+                document.getElementById('final-image-upload').addEventListener('change', async (e) => {
+                    const file = e.target.files[0];
+                    if (file) {
+                        try {
+                            this.currentImages.final = await ImageHandler.previewImage(file, 'final-image-preview');
+                            
+                            // Update the latest response with final image
+                            const responses = this.db.getAllResponses();
+                            if (responses.length > 0) {
+                                const latestResponse = responses[responses.length - 1];
+                                latestResponse.images.final = this.currentImages.final;
+                                localStorage.setItem('heartResponses', JSON.stringify(responses));
+                            }
+                        } catch (error) {
+                            console.error('Error processing final image:', error);
+                        }
+                    }
+                });
+                
+                // Answer buttons
+                document.getElementById('yes-btn').addEventListener('click', () => {
+                    this.db.saveResponse('yes', this.currentImages);
+                    this.currentImages.initial = null; // Reset for next time
+                    this.showPage('yes-container');
+                });
+                
+                document.getElementById('no-btn').addEventListener('click', () => {
+                    this.db.saveResponse('no', this.currentImages);
+                    this.currentImages.initial = null; // Reset for next time
+                    this.showPage('no-container');
+                });
+                
+                // Back from results
+                document.getElementById('back-to-question-from-yes').addEventListener('click', () => {
+                    this.showPage('question-container');
+                });
+                
+                document.getElementById('back-to-question-from-no').addEventListener('click', () => {
+                    this.showPage('question-container');
+                });
+                
+                // Admin login
+                document.getElementById('admin-login-btn').addEventListener('click', () => this.handleAdminLogin());
+                document.getElementById('admin-password').addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') this.handleAdminLogin();
+                });
+                
+                // Back to main from admin login
+                document.getElementById('back-to-user-login').addEventListener('click', () => {
+                    this.showPage('login-container');
+                });
+                
+                // Admin logout
+                document.getElementById('admin-logout').addEventListener('click', () => {
+                    this.showPage('login-container');
+                });
+                
+                // Admin controls
+                document.getElementById('clear-data').addEventListener('click', () => {
+                    if (confirm('⚠️ Are you absolutely sure you want to delete ALL responses?\nThis action cannot be undone.')) {
+                        this.db.clearAllResponses();
+                        alert('All responses have been cleared.');
+                    }
+                });
+                
+                document.getElementById('export-data').addEventListener('click', () => {
+                    this.db.exportData();
+                    alert('Responses exported successfully!');
+                });
+            }
+            
+            handleLogin() {
+                const username = document.getElementById('username').value.trim();
+                const password = document.getElementById('password').value;
+                
+                if (!username) {
+                    alert('Please enter your name first');
+                    return;
+                }
+                
+                if (password !== '143') {
+                    alert('Incorrect code. Remember: 143 means "I love you"');
+                    return;
+                }
+                
+                localStorage.setItem('currentUserName', username);
+                this.showPage('message-container');
+                
+                // Add some visual feedback
+                const btn = document.getElementById('login-btn');
+                const originalText = btn.innerHTML;
+                btn.innerHTML = '<i class="fas fa-heart"></i> Opening My Heart...';
+                btn.disabled = true;
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
+                }, 1500);
+            }
+            
+            handleAdminLogin() {
+                const username = document.getElementById('admin-username').value.trim();
+                const password = document.getElementById('admin-password').value.trim();
+                
+                if (this.db.validateAdmin(username, password)) {
+                    this.db.updateAdminStats();
+                    this.showPage('admin-panel-container');
+                    
+                    // Clear admin fields
+                    document.getElementById('admin-username').value = '';
+                    document.getElementById('admin-password').value = '';
+                } else {
+                    alert('Invalid admin credentials');
+                }
+            }
+            
+            showPage(pageId) {
+                // Hide all pages
+                document.querySelectorAll('.container').forEach(page => {
+                    page.classList.add('hidden');
+                });
+                
+                // Show requested page
+                const page = document.getElementById(pageId);
+                page.classList.remove('hidden');
+                
+                // Add entrance animation
+                page.style.animation = 'none';
+                setTimeout(() => {
+                    page.style.animation = 'fadeInUp 0.8s ease-out';
+                }, 10);
+                
+                // Special handling for admin panel
+                if (pageId === 'admin-panel-container') {
+                    this.db.updateAdminStats();
+                }
+                
+                // Special handling for login page - reset fields
+                if (pageId === 'login-container') {
+                    document.getElementById('password').value = '';
+                    document.getElementById('username').focus();
+                }
+            }
+        }
+
+        // Initialize the application
+        document.addEventListener('DOMContentLoaded', () => {
+            new UIController();
+            
+            // Set focus to username field on load
+            document.getElementById('username').focus();
+            
+            // Add some console love
+            console.log('%c💙 From My Heart to Yours 💙', 'color: #2563eb; font-size: 18px; font-weight: bold;');
+            console.log('%cThis website was made with genuine feelings and hopes', 'color: #3b82f6;');
+        });
+    </script>
+</body>
+</html>
